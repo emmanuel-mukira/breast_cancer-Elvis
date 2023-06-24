@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Breast Cancer Detection{% endblock %}
+
+{% block content %}
+<h1 align="center">Breast Cancer Detection</h1>
+<form method="POST" enctype="multipart/form-data" action="{{ url_for('views.predict') }}">
+    <div align="center">
+        <label for="image">Upload Image:</label>
+        <input type="file" id="image" name="file" onchange="previewImage(event)">
+    </div>
+    <br>
+    <div align="center">
+        <button type="submit" class="btn btn-primary">Detect</button>
+    </div>
+    <br>
+    <div align="center" id="imagePreviewContainer" style="display: none;">
+        <img id="imagePreview" alt="Image Preview" width="400" height="400">
+    </div>
+</form>
+
+<script>
+    function previewImage(event) {
+        var input = event.target;
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                var imagePreview = document.getElementById("imagePreview");
+                imagePreview.src = e.target.result;
+                document.getElementById("imagePreviewContainer").style.display = "block";
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+{% endblock %}
