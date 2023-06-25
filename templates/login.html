@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 {% block title %}Login{% endblock %}
 {% block content%}
+<body>
+    <canvas class="background"></canvas>
+
+<link rel="stylesheet" href="login.css">
+<div id="particles-js"></div>
 <form method="post">
     <h3 text-align="centre">Login</h3>
     <div class="form-group">
@@ -14,6 +19,17 @@
     </div>
     <br />
     <button type="submit" class="btn btn-primary">Login</button>
-
 </form>
+
+<script src="index.js"></script>
+<script src="particles.min.js"></script>
+
+
+
+</body>
+<script src="index.js"></script>
+<script src="particles.min.js"></script>
+{% endblock %}
+
+
 {% endblock %}

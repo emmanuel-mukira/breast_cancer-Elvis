@@ -1,0 +1,110 @@
+/* Custom Styling for the Medical Design */
+
+/* Body Styles */
+
+    /* Navbar Styles /
+    .navbar {
+    background-color: #333;
+    height: 60px; / Increase the navbar height */
+    
+    
+    .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px; /* Increase the font-size of the links */
+    }
+    
+    .navbar-nav .nav-link:hover {
+    color: blue; /* Set the hover color to blue */
+    }
+    
+    .navbar-nav {
+    margin-left: auto; /* Align the links to the right */
+    }
+    
+    /* Alert Styles */
+    .alert {
+    margin-bottom: 20px;
+    }
+    
+    .alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    }
+    
+    .alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+    }
+    
+    .close {
+    outline: none;
+    }
+    
+    /* Container Styles */
+    .container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    body{
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(225, 162, 25) 0.1%, rgb(0, 92, 221) 99.8% );;
+    }
+    
+    /* Form Styles */
+    form {
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    }
+    
+    .form-group {
+    margin-bottom: 15px;
+    }
+    
+    label {
+    font-weight: bold;
+    display: block;
+    font-size: 18px;
+    color: #333;
+    }
+    
+    input[type="email"],
+    input[type="password"],
+    input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+    
+    button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #034c90;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+    button:hover {
+    background-color: #555;
+    }
+    .background{
+        position: fixed;
+        top:0;
+        left:0;
+        width: 100%;
+        height:100%;
+        z-index: -1;
+      }
